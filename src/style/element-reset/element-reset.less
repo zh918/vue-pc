@@ -1,0 +1,519 @@
+//菜单部分
+.el-menu-item,
+.el-submenu__title,
+.el-submenu .el-menu-item {
+    text-align: left;
+    font-size: 14px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #FFFFFF;
+    color: #999;
+}
+.el-submenu__icon-arrow{
+    right: 10px !important;
+}
+.el-menu-item.is-active {
+    color: #FFFFFF;
+    background-color: #FF9600;
+    &:hover{
+        color: #FFFFFF;
+        background-color: #FF9600;
+    }
+}
+.el-date-editor.el-input{
+    width: auto;
+}
+.first-level.is-opened, .first-level-index, .first-level .el-submenu__title,{
+    border-bottom: 1px solid #f0f0f0;
+}
+.el-submenu.is-active .el-submenu__title{
+    border-bottom: none;
+}
+.first-level>.el-submenu__title,.first-level-index{
+    padding-left: 10px !important;
+}
+.menu-wrapper .iconfont{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.second-level .el-submenu__title{
+    border-bottom: none;
+}
+.el-menu >div:first-of-type{
+    background: red !important;
+}
+.el-submenu.is-active .el-submenu__title {
+    border-bottom-color: #f0f0f0;
+}
+
+//面包屑部分
+.el-breadcrumb__item{
+    color: #999;
+    &:last-child{
+        .el-breadcrumb__item__inner{
+            color: #2d2d2d;
+        }
+    }
+}
+.el-breadcrumb,
+.el-breadcrumb__item__inner {
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+}
+
+//表格
+.el-table{
+    font-size: 12px;
+}
+.el-table .cell, .el-table th>div{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.el-table__header-wrapper thead div,.el-table th{
+    background-color: #F3F4F9;
+    color: #2D2D2D;
+    font-weight: normal;    
+}
+.el-table td, .el-table th{
+    height: 30px;
+}
+//按钮部分
+
+/*
+ *  通用
+  */
+
+.el-button {
+    min-width: 100px;
+    color: #153380;
+    border-color: #153380;
+}
+.el-input__inner{
+    border-color: #e0e0e0;
+    color:#2d2d2d;
+}
+
+/*
+ * 长按钮
+ */
+
+.el-button.large {
+    width: 184px;
+    font-size: 14px;
+}
+
+
+/*
+ * 非鼓励性功能按钮(取消按钮)
+ */
+
+.el-button.not-function {
+    color: #fff;
+    padding: 10px;
+    border-color: #ccc;
+    background: #ccc;
+}
+
+.el-button.not-function:hover {
+    border-color: #999;
+    background: #999;
+}
+
+.el-button.not-function:active {
+    background: #999;
+}
+
+.el-button.el-button--primary {
+    background-color: #FF9600;
+    border-color: #FF9600;
+    color:#fff;
+}
+
+.el-button.el-button--primary:hover {
+    background-color: #ff7800;
+}
+
+
+/*
+ *一般功能按钮
+ */
+
+.el-button.common {
+    min-width: 100px;
+    background: #fff;
+    color: #153380;
+    box-sizing: content-box;
+    border: 1px solid #153380;
+}
+
+.el-button.common:hover {
+    color: #1d5dfc;
+    border: 1px solid #1d5dfc;
+}
+
+.el-button.common:active {
+    background: #ccc;
+    color: #153380;
+    border: 1px solid #153380;
+}
+
+
+/*
+ * 查找按钮
+ */
+
+.el-button.search {
+    width: 100px;
+    height: 30px;
+    box-sizing: content-box;
+    line-height: 30px;
+    font-size: 14px;
+    background: #fff;
+    color: #153380;
+    border: 1px solid #153380;
+}
+
+.el-button.search:hover {
+    color: #1d5dfc;
+    border: 1px solid #1d5dfc;
+}
+
+.el-button.search:active {
+    background: #E0E0E0;
+    color: #153380;
+    border: 1px solid #153380;
+}
+
+
+/*
+ * 查看原图
+ */
+
+.el-button.look {
+    width: 70px;
+    height: 26px;
+    box-sizing: content-box;
+    line-height: 26px;
+    background: #fff;
+    color: #153380;
+    border: 1px solid #153380;
+}
+
+.el-button.look:hover {
+    color: #1d5dfc;
+    border: 1px solid #1d5dfc;
+}
+
+.el-button.look:active {
+    background: #E0E0E0;
+    color: #153380;
+    border: 1px solid #153380;
+}
+
+
+/*
+ * 文字按钮
+ */
+
+
+/*
+ * 更改报价、设为测试用户、取消订单、延期、跟进中 （不用加类名，为默认文本按钮）
+ */
+
+
+/*
+ * 审核、查看资料、下载资料、转为正常账户、报价、查看保障、保障详情、账单详情、详情、支付、退保、删除、编辑设置险种代码、灰度下架、正式上架
+ */
+
+.el-button--text.normal {
+    color: #153380;
+}
+
+.el-button--text.normal:hover,
+.el-button--text.normal:focus,
+.el-button--text.normal:active {
+    color: #1d5dfc;
+}
+
+
+/*
+ * 退费、设为黑名单、下架、解绑、作废
+ */
+
+.el-button--text.error {
+    color: #e74c3c;
+}
+
+.el-button--text.error:hover,
+.el-button--text.error:focus,
+.el-button--text.error:active {
+    color: #ff0000;
+}
+
+
+/*
+ * 投保成功、申请订单、重新申请订单、配送
+ */
+
+.el-button--text.success {
+    color: #27ae60;
+}
+
+.el-button--text.success:hover,
+.el-button--text.success:focus,
+.el-button--text.success:active {
+    color: #2ecc71;
+}
+
+//分页
+.el-pager li.active {
+    background-color: #FF9600;
+    border-color: #FF9600;
+}
+
+//表单控件
+.el-form-item__label {
+    text-align: left;
+}
+
+//消息提示
+.el-message {
+    top: 48%;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.8);
+    img {
+        display: none;
+    }
+    .el-message__group,
+    p {
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+// 渠道营销活动首页设计 dialog对话框
+.el-dialog.el-dialog--small.activity-design-mask {
+    width: 1000px;
+    top: 50px !important;
+    margin-bottom: 50px;
+    .el-dialog__body,
+    .el-dialog__header,
+    .el-dialog__footer {
+        color: #27292f;
+        padding: 0;
+    }
+    .el-dialog__title {
+        padding-left: 20px;
+        line-height: 40px;
+        height: 40px;
+        font-weight: normal;
+        display: block;
+        background-color: #e0e0e0;
+    }
+    .dialog-content {
+        font-size: 15px;
+        display: flex;
+        >div {
+            flex: 1;
+            padding: 20px 60px 30px;
+        }
+        .page-title {
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        .page-review-content {
+            border: 1px solid #27292F;
+            width: 378px;
+            overflow: hidden;
+            >div:first-of-type{
+                width: 378px;
+                height: 228px;
+                border-bottom: 1px solid #27292F;
+            }
+        }
+        .page-img {
+            display: block;
+            width: 378px;
+            height: 228px;
+        }
+        .page-down {
+            text-align: center;
+            padding: 26px;
+        }
+        .page-down-form {
+            background-color: #FFFFFF;
+            font-size: 15px;
+            padding: 0 5px;
+            border: 1px solid #CCCCCC;
+        }
+        .page-down-title {
+            height: 50px;
+            line-height: 50px;
+        }
+        .page-button {
+            display: block;
+            cursor: pointer;
+            height: 36px;
+            line-height: 36px;
+            border: 0;
+            font-size: 18px;
+            margin-top: 34px;
+            margin-bottom: 22px;
+            background: gray;
+        }
+        .page-input {
+            position: relative;
+            text-align: left;
+            display: block;
+            border-top: 1px solid #CCCCCC;
+            padding: 12px 13px;
+        }
+        .page-input input {
+            width: 100px;
+            font-size: 15px;
+            border: none;
+            margin-left: 5px;
+        }
+        .page-explain {
+            word-break: break-all;
+            height: 72px;
+            text-align: left;
+            font-size: 12px;
+            color: #CCCCCC;
+        }
+        .get-code {
+            position: absolute;
+            right: 0;
+            top: 3px;
+            border: 1px solid #CCCCCC;
+            padding: 9px;
+            cursor: pointer;
+        }
+        .red-star >span:before {
+            content: "*";
+            color: red;
+        }
+        .page-design-content>p {
+            margin-bottom: 20px;
+        }
+        .page-design-content>p:not(.red-star):before {
+            content: "*";
+            color: #FFFFFF;
+        }
+        .page-design-content>p:not(.red-star) span{
+            vertical-align: top;
+        }
+        .page-design-content span {
+            vertical-align: top;
+            display: inline-block;
+            width: 120px;
+            font-size: 14px;
+            color: #27292f;
+            margin-left: 3px;
+        }
+        .page-design-content input {
+            width: 180px;
+            padding: 3px 6px;
+            margin: 0 5px;
+        }
+        .page-theme-img {
+            >p{
+                margin-bottom: 10px;
+            }
+            position: relative;
+            padding: 0 12px 12px;
+            .image-upload-wrapper, .upload-icon-wrapper{
+                width: 100% !important;
+            }
+            .img-upload-icon {
+                margin: 5px auto;
+                font-size: 56px;
+                display: flex;
+            }
+            .upload-icon-wrapper:hover{
+                .img-upload-icon{
+                    color: #FF7800;
+                }
+            }
+            .tips{
+                margin-bottom: 25px;
+                text-align: center;
+                color: #999;
+            }
+        }
+        .page-explain-textarea{
+            width: 180px;
+            max-width: 180px;
+            min-width: 180px;
+            height:60px;
+            margin-left: 5px;
+            outline: none;
+            
+        }
+    }
+    .el-dialog__footer {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+//编辑保费节点dialog
+.premium-node-dialog{
+    width: 400px;
+    .el-dialog__body,
+    .el-dialog__header,
+    .el-dialog__footer {
+        color: #27292f;
+        padding: 0;
+    }
+    .el-dialog__body{
+        padding: 20px 30px;
+    }
+    .el-dialog__title {
+        padding-left: 20px;
+        line-height: 40px;
+        height: 40px;
+        font-weight: normal;
+        display: block;
+        background-color: #e0e0e0;
+    }    
+    .el-dialog__footer {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .el-input{
+        margin-right: 10px;
+        width: 170px;   
+    }
+}
+
+
+//文件上传
+   .avatar-uploader{
+       margin-top: 10px;
+       display: flex;
+       justify-content: center;
+   }
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #FF9600;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+  }

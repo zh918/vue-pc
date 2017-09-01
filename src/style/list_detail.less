@@ -1,0 +1,185 @@
+.container-hjl.list {
+  .container-body {
+    //margin: 0 0 1.2em 0;
+
+  }
+
+}
+
+// 详情布局样式
+.container-hjl.detail {
+  .group-title {
+    margin: 20px 0 10px;
+    height: 16px;
+    .left {
+      float: left;
+      display: block;
+
+      height: 16px; line-height: 16px; color: #999; font-size: 16px;
+    }
+    .right {
+      padding-left: 10px;
+      overflow:hidden;
+      display: block;
+
+      height: 16px;
+      line-height: 8px;
+      &>span {
+        display:inline-block; width:100%; height: 1px; background-color: #efefef;
+      }
+    }
+  }
+
+  .container-body-checklist {
+    ul li {
+      float: left;
+      padding: 8px;
+      width: 50%;
+    }
+  }
+
+  .container-body-form {
+    margin: 0 -20px;
+    padding: 20px;
+
+    .container-body-device-number-input {
+      .unusable {
+        color: red;
+      }
+
+      .usable {
+        color: green;
+      }
+    }
+  }
+
+}
+
+// 通用
+
+.container-hjl {
+
+  //.el-input {
+  //  width: 193px !important;
+  //}
+  //
+  //
+  //.el-input__inner {
+  //  height: 30px;
+  //  border-radius: 0px;
+  //}
+
+  .dialog-body {
+    text-align: center;
+
+    .content-wrapper {
+      display: inline-block;
+      text-align: left;
+
+      p {
+        white-space: nowrap;
+      }
+      .label {
+        display: inline-block;
+        width: 100px;
+      }
+    }
+  }
+
+  .table {
+    th, td {
+      border: 1px solid lightgray;
+      text-align: start;
+      padding: 0 0 0 8px;
+    }
+  }
+
+  .container-shimmer {
+    margin: 0.4em;
+  }
+
+
+  .line {
+    clear: both;
+    margin: 15px 0;
+  }
+
+  .border {
+    overflow-y: auto;
+    margin: 8px 0;
+    border: 1px solid #e0e0e0;
+    background: white;
+    padding: 15px 30px;
+  }
+
+  textarea {
+    overflow-y: auto;
+    resize: none;
+    border: 1px solid #e0e0e0;
+    background: white;
+    padding: 8px;
+    min-height: 60px;
+    width: 300px;
+  }
+
+  .check-group {
+    font-size: 14px;
+    color: #2d2d2d;
+    line-height: 30px;
+    white-space: nowrap;
+
+    & > * {
+      display: inline-block;
+      margin-left: 16px;
+    }
+    & > *:first-child {
+      margin-left: 0;
+    }
+
+    span {
+      height: 14px;
+      line-height: 14px;
+    }
+  }
+
+  .check-group-el {
+    //line-height: 36px;
+    white-space: nowrap;
+
+    & > * {
+      display: inline-block;
+      margin-left: 16px;
+    }
+    & > *:first-child {
+      margin-left: 0;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .info-gourp-single-column {
+    th, td {
+      padding: 8px;
+      width: 25%;
+    }
+
+    & > * {
+      margin: 15px 0;
+    }
+    &:last-child {
+      margin: 0px 0;
+    }
+  }
+
+  .bgd-f3f4f9 {
+    background: #f3f4f9;
+  }
+
+  h2 {
+    height: 1.5em;
+    line-height: 1.5em;
+  }
+
+
+}
